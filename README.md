@@ -33,6 +33,8 @@ IPv6 addresses for example.com:
     2606:2800:220:1:248:1893:25c8:1945
 ```
 
+![showip-example-output](images/showip-example-output.png)
+
 ## Contributions
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
