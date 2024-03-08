@@ -35,6 +35,25 @@ IPv6 addresses for example.com:
 
 ![showip-example-output](images/showip-example-output.png)
 
+## Common Errors
+
+1. Windows Users
+
+   - If you're on Windows, using WSL is a good option.
+   - To run the code, use "WSL: Open Folder in WSL" option in VSCode and open the file.
+   - Run the file using the above commands in terminal.
+
+2. *Incomplete type is not allowed* error
+   - In the .vscode folder, open "c_cpp_properties.json".
+   - Within configurations, add defines as follows:
+   ```
+   "defines": [
+               "__linux__",
+               "__x86_64__",
+               "_GNU_SOURCE"
+           ],
+   ```
+
 ## Contributions
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
