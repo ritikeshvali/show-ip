@@ -24,8 +24,8 @@ int main(int argc, char *argv[])
 
     if ((status = getaddrinfo(argv[1], NULL, &hints, &res)) != 0)
     {
-        fprintf(stderr, "getaddrinfo: %\n", gai_strerror(status));
-        return;
+        fprintf(stderr, "getaddrinfo: %s\n", gai_strerror(status));
+        return 2;
     }
 
     printf("IP addresses for %s:\n\n", argv[1]);
